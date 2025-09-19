@@ -98,10 +98,24 @@ header a{
     font-size: 90px;
     margin: 0;
 }
+
 .Vinicius{
+    overflow: hidden;
     color: crimson;
     font-size: 90px;
     margin: 0;
+    border-right:1px solid #dc143c;
+    letter-spacing: .1em;
+    animation: typing 3s steps(8, end), blink .75s step-end infinite;
+
+}
+@keyframes typing{
+    from{width: 0;}
+    to{width: 8ch;}
+}
+@keyframes blink {
+    from, to{border-color: transparent;}
+    50%{border-color: rgb(255, 0, 0);}
 }
 .nome{
     display: flex;
@@ -179,16 +193,23 @@ header a{
     margin: 0;
 }
 .majortitle{
+    display: flex;
     font-size: 30px;
     margin: 0;
+    width: 300px;
+    
 }
 .tecnico{
     display: flex;
     gap:30px;
+    width: 1000px;
 }
 .faculdade{
     display: flex;
     gap: 30px;
+    justify-content: space-between;
+    width: 1000px;
+
 
 }
 .listaFormaçao{
@@ -202,3 +223,69 @@ header a{
     text-decoration: none;
     color: #dc143c;
 }
+/*ABOUT ME*/
+/*Projects*/
+.projects{
+    font-size: 50px;
+}
+/*Projects*/
+.projectimage{
+    object-fit: cover;
+    width: 500px;
+    border: 1px solid #dc143c;
+    border-radius: 10px;
+
+}
+.projectTitle{
+    font-size: 30px;
+    color: crimson;
+}
+.descriptionProject{
+    font-size: 20px;
+
+}
+.project{
+    width: 500px;
+}
+
+
+/*Skilss*/
+.skillstitle{
+    font-size: 50px;
+}
+.img{
+    object-fit: cover;
+    width: 60px;
+    
+}
+.languagelist{
+    display: flex;
+    gap: 10px;
+}
+
+
+.bordaskills{
+    border:1px, solid, #dc143c;
+    flex: 1;
+    border-radius: 10px;
+    padding-top: 10px;
+    display: flex;
+    width: 10px;
+    height: 200px;
+    flex-direction: column;
+    font-size: 10px;
+    padding-left: 10px;
+    transition: all 1s;
+
+
+}
+.bordaskills:hover{
+    border:1px, solid, #dc143c;
+    border-radius: 10px;
+    padding-top: 10px;
+    flex-grow: 5;
+    transition: all 0.5s;
+    font-size: 20px;
+
+}
+/*Skills*/

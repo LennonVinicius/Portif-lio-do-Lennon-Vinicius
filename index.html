@@ -17,9 +17,9 @@
             <ul>    
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#AboutMe">About Me</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -56,14 +56,14 @@
     <div class="aboutMe">
         <h1 class="about">About <a class="me    " href="#Home">Me</a></h1>
         <div class="major">
-            <H2 class="myBackground">Formação</H2>
+            <H2 class="myBackground">Major and Degree</H2>
             <div class="listaFormaçao">
                 <div class="tecnico">
                     <img class="ifspimage" src="imagefiles/ifsp.png">
                     <div>
-                    <p class="tecnicotitle">Técnico em automação Industrial</p>
-                        <p>Instituto Federal de São Paulo-Campus São José dos Campus</p>
-                        <p>Fev 2019 - Dez 2021</p>
+                    <p class="tecnicotitle">Industrial Automation technician</p>
+                        <p>Federal Institute of São Paulo-Campus São José dos Campus</p>
+                        <p>February 2019 - December 2021</p>
                     </div>
                     <div>
                         <p>In this course, I had the opportunity to learn how to:</p>
@@ -76,11 +76,14 @@
                 <div class="faculdade">
                     <img class="uspimage" src="imagefiles/usp.png">
                     <div>
-                    <p class="majortitle">Engenharia Elétrica</p>
-                        <p>Universidade de São Paulo</p>
-                        <p>Fev 2023 - Cursando</p>
+                    <p class="majortitle">Electrical engineering</p>
+                        <p>University of São Paulo</p>
+                        <p>February 2023 - Currently studying</p>
                     </div>
-                    <div></div>
+                    <div>
+                        <p>I am currently studying electrical engineering, I have a solid foundation in advanced mathematics and physics, I program using C, HTML, CSS and Javascript.
+                        I learned how to use Autocad and NX Siemens 3D modeling programs.</p>
+                    </div>
                 </div>
 
             </div>
@@ -91,25 +94,81 @@
     </div>
     </section>
     <!--Projects ------------------------------------>
-    <div class="--Projects">
+    <h2 id="Projects" class="projects">
         Projects
+    </h2>
+    <ul>
+        <li class="project">
+            <img class="projectimage" src="imagefiles/Portfolioproject.png">
+            <p class="projectTitle">Personal site</p>
+            <p class="descriptionProject">This personal page was built using only HTML and CSS, JavaScript and using some API's.</p>
+        </li>
 
-    </div>
+    </ul>
     <!--Skills ------------------------------------>
     <div class="Skills">
-        <h1>Skills</h1>
-        <ul>
-            <li><img src="" alt="">C#</li>
-            <li><img src="" alt="">HTML</li>
-            <li><img src="" alt="">CSS</li>
-            <li><img src="" alt="">Python</li>
-            <li><img src="" alt="">MySql</li>
+        <h1 class="skillstitle">Skills</h1>
+        <ul class="languagelist">
+            <div class="bordaskills">
+                <li><img class="img" src="imagefiles/icons8-c-sharp-logo-100.png" alt="">
+                <p class="textlanguage">
+                C# is the language I use most, I have the fundamentals of OPP, CRUD and UML diagrams.</p>
+                </li>
+            </div>
+            <div class="bordaskills">
+                <li><img class="img" src="imagefiles/icons8-html-5-100.png" alt=""></li>
+                <p class="textlanguage">I master the use of HTML, control of DIVS, classes, paragraphs and organization.    </p>
+            </div>
+            <div class="bordaskills">
+                <li><img class="img" src="imagefiles/icons8-cascading-style-sheets-language-used-for-describing-the-presentation-of-a-document-100.png" alt="">
+                <p class="textlanguage">I have knowledge about styling with CSS. Being able to use transitions, color markings and control class styles.</p>
+                </li>
+            </div>
+            <div class="bordaskills">
+                <li><img class="img" src="imagefiles/icons8-javascript-logo-100.png" alt="">
+                    <p class="textlanguage">I created projects using Google Maps API integration using javascript.</p>
+                </li>
+            </div>
+            <div class="bordaskills">
+                <li><img class="img" src="imagefiles/icons8-python-100.png" >
+                <p class="textlanguage">I have knowledge of Python, I have made games using Pygame, and projects using Pycharm.</p>
+                </li>
+            </div>
+            <div class="bordaskills">
+                <li><img class="img" src="imagefiles/icons8-sql-100.png">
+                <p class="textlanguage">I know a little about SQL, control and data structure.</p>
+                </li>
+            </div>
         </ul>
     </div>
     <!--Skills ------------------------------------>
     <div class="ContactMe">
-
+        <h2 class="skillstitle">Contact Me</h2>
     </div>
+    <div>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <input type="text" id="message" name="message" required>
+            </div>
+            <button type="submit" onclick="sendMail()">Send</button>
+
+        </form>
+    </div>
+    <img src="imagefiles/leno-removebg-preview.png">
+
     <!--Footer ------------------------------------>
 
     <footer>
