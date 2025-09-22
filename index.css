@@ -1,10 +1,32 @@
 body{
     background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(114, 50, 46, 0.966), transparent 70%), black;
-    margin: 60px;
-    margin-top: -20px;
+    margin: 4vw;
+    margin-top: -2vh;
     font-family: Arial, Helvetica, sans-serif;
     color: aliceblue;
+    display: grid;
+    min-height: 100vh;
+    box-sizing: border-box;
+
 }
+
+@media (max-width: 768px) {
+    body {
+        margin: 3vw;
+        margin-top: 0; 
+        font-size: 0.95rem;
+        grid-template-columns:  1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 2vw;
+        font-size: 0.9rem;
+        grid-template-columns:  1fr;
+    }
+}
+
 ul{
 list-style-type: none;
 }
@@ -22,6 +44,7 @@ header{
     color: aliceblue;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 50px;
+
 }
 
 .folio{
@@ -68,6 +91,7 @@ header a{
     align-items: center;
     flex-direction: row-reverse;
     padding-bottom: 130px;
+    
 }
 .profileRight{
     display: flex;
@@ -190,7 +214,6 @@ header a{
 }
 .tecnicotitle{
     font-size: 30px;
-    margin: 0;
 }
 .majortitle{
     display: flex;
@@ -199,7 +222,7 @@ header a{
     width: 300px;
     
 }
-.tecnico{
+.tecnico{   
     display: flex;
     gap:30px;
     width: 1000px;
