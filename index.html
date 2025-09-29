@@ -6,6 +6,18 @@
     <title>Portifólio do Lennon Vinicius</title>
     <link rel="stylesheet"  href="index.css">
     </div>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Y6q_fEXbS1-U-V1uU",
+      });
+   })();
+</script>
+<script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -23,6 +35,7 @@
             </ul>
         </div>
     </header>
+
     <!--Profile ------------------------------------>
     <section id="Home">
         <div class="profile">
@@ -48,9 +61,12 @@
             </div>
             </div>
         </div>
-   
+    </section>
+    <div class="centralizacao">
         <a class="downloadCV" href="imagefiles/Lennon Vinicius de Moraes Soares (14).pdf">Download CV</a>
-  </section>
+    </div>
+    
+
     <!--AboutMe ------------------------------------>
     <section id="AboutMe">
     <div class="aboutMe">
@@ -145,7 +161,7 @@
     <div class="ContactMe">
         <h2 class="skillstitle">Contact Me</h2>
     </div>
-    <div>
+    <div class="Contact">
         <form>
             <div class="form-group">
                 <label for="name">Name</label>
@@ -166,8 +182,9 @@
             <button type="submit" onclick="sendMail()">Send</button>
 
         </form>
+      
     </div>
-    <img src="imagefiles/leno-removebg-preview.png">
+    
 
     <!--Footer ------------------------------------>
 

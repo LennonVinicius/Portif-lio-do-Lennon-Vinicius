@@ -1,4 +1,4 @@
-body{
+body {
     background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(114, 50, 46, 0.966), transparent 70%), black;
     margin: 4vw;
     margin-top: -2vh;
@@ -7,288 +7,254 @@ body{
     display: grid;
     min-height: 100vh;
     box-sizing: border-box;
-
 }
 
-@media (max-width: 768px) {
-    body {
-        margin: 3vw;
-        margin-top: 0; 
-        font-size: 0.95rem;
-        grid-template-columns:  1fr;
-    }
+.img {
+    max-width: 100%;
+    height: auto;
 }
 
-@media (max-width: 480px) {
-    body {
-        margin: 2vw;
-        font-size: 0.9rem;
-        grid-template-columns:  1fr;
-    }
+ul {
+    list-style-type: none;
 }
 
-ul{
-list-style-type: none;
-}
-/*HEADER*/
-header{
+header {
     color: aliceblue;
-    display:flex;
+    display: flex;
     align-items: center;
-    justify-content: space-between;    
-    
+    justify-content: space-between;
 }
 
-/*Portfolio title*/
-.Port{
+.Port {
     color: aliceblue;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
-
 }
 
-.folio{
+.folio {
     color: crimson;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 45px;
-   
 }
 
-.Portfolio{
+.Portfolio {
     align-items: baseline;
     display: flex;
 }
-/*Portfolio title*/
-.bar{
+
+.bar {
     display: flex;
     align-items: baseline;
-
 }
 
-header ul{
+header ul {
     display: flex;
     list-style: none;
-   
-    
 }
-header li{
+
+header li {
     margin-right: 20px;
-  
 }
-header a{
+
+header a {
     text-decoration: none;
     color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     text-transform: uppercase;
 }
-/*HEADER*/
-/*BODY*/
-/*HOME*/
-.profile{
+
+.profile {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
     padding-bottom: 130px;
-    
 }
-.profileRight{
+
+.profileRight {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
-  
 }
 
-.foto{
+.foto {
     border-radius: 50%;
     width: 400px;
     height: 400px;
     object-fit: cover;
     border: 3px solid #dc143c;
-    
 }
-.Ola{
+
+.Ola {
     color: aliceblue;
     padding-top: 100px;
-  
     font-size: 30px;
     margin: 0;
-
 }
-.Lennon{
+
+.Lennon {
     color: aliceblue;
     font-size: 90px;
     margin: 0;
 }
 
-.Vinicius{
+.Vinicius {
     overflow: hidden;
     color: crimson;
     font-size: 90px;
     margin: 0;
-    border-right:1px solid #dc143c;
+    border-right: 1px solid #dc143c;
     letter-spacing: .1em;
     animation: typing 3s steps(8, end), blink .75s step-end infinite;
+}
 
+@keyframes typing {
+    from {width: 0;}
+    to {width: 8ch;}
 }
-@keyframes typing{
-    from{width: 0;}
-    to{width: 8ch;}
-}
+
 @keyframes blink {
-    from, to{border-color: transparent;}
-    50%{border-color: rgb(255, 0, 0);}
+    from, to {border-color: transparent;}
+    50% {border-color: rgb(255, 0, 0);}
 }
-.nome{
+
+.nome {
     display: flex;
 }
-.text{
+
+.text {
     color: aliceblue;
     font-size: 20px;
 }
-.icons{
+
+.icons {
     display: flex;
-    gap: 20px;  
+    gap: 20px;
 }
-.downloadCV{
-    color:crimson, ;
-    text-decoration: none;
-    border: 3px solid, crimson;
-    border-radius: 30%;
-    padding: 13px;
 
-    text-transform: uppercase;
-    font-size: 30px;
-    margin: 40%;
-
-
-}
-.downloadCV:visited{
+.downloadCV {
     color: crimson;
     text-decoration: none;
-    border: 3px solid, crimson;
+    border: 3px solid crimson;
     border-radius: 30%;
     padding: 13px;
-
     text-transform: uppercase;
     font-size: 30px;
-    margin: 40%;
-
+    text-align: center;
+    width: 300px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  
 }
-/*HOME*/
+.centralizacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-/*ABOUT ME*/
-.about{
+
+.about {
     padding-top: 150px;
     color: aliceblue;
     font-size: 90px;
-
-
 }
-.textabout{
+
+.textabout {
     color: aliceblue;
     font-size: 20px;
-
-    
 }
-.myBackground{
+
+.myBackground {
     color: aliceblue;
     font-size: 50px;
 }
-.uspimage{
-    border-radius: 50%;
-    border: 3px solid crimson;
-    object-fit: cover;
-    width: 150px;
-    height: 150px;
-}
-.ifspimage{
-    border-radius: 50%;
-    border: 3px solid crimson;
-    object-fit: cover;
-    width: 150px;
-    height: 150px;
 
+.uspimage, .ifspimage {
+    border-radius: 50%;
+    border: 3px solid crimson;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
 }
-.tecnicotitle{
+
+.tecnicotitle {
     font-size: 30px;
 }
-.majortitle{
+
+.majortitle {
     display: flex;
     font-size: 30px;
     margin: 0;
     width: 300px;
-    
 }
-.tecnico{   
+
+.tecnico {
     display: flex;
-    gap:30px;
+    gap: 30px;
     width: 1000px;
 }
-.faculdade{
+
+.faculdade {
     display: flex;
     gap: 30px;
     justify-content: space-between;
     width: 1000px;
-
-
 }
-.listaFormaçao{
+
+.listaFormaçao {
     display: flex;
     flex-direction: column;
-    gap:50px;
-  
-    
+    gap: 50px;
 }
-.me{
+
+.me {
     text-decoration: none;
     color: #dc143c;
 }
-/*ABOUT ME*/
-/*Projects*/
-.projects{
+
+.projects {
     font-size: 50px;
 }
-/*Projects*/
-.projectimage{
+
+.projectimage {
     object-fit: cover;
     width: 500px;
     border: 1px solid #dc143c;
     border-radius: 10px;
-
 }
-.projectTitle{
+
+.projectTitle {
     font-size: 30px;
     color: crimson;
 }
-.descriptionProject{
-    font-size: 20px;
 
+.descriptionProject {
+    font-size: 20px;
 }
-.project{
+
+.project {
     width: 500px;
 }
 
-
-/*Skilss*/
-.skillstitle{
+.skillstitle {
     font-size: 50px;
 }
-.img{
+
+.img {
     object-fit: cover;
     width: 60px;
-    
 }
-.languagelist{
+
+.languagelist {
     display: flex;
     gap: 10px;
 }
 
-
-.bordaskills{
-    border:1px, solid, #dc143c;
+.bordaskills {
+    border: 1px solid #dc143c;
     flex: 1;
     border-radius: 10px;
     padding-top: 10px;
@@ -299,16 +265,151 @@ header a{
     font-size: 10px;
     padding-left: 10px;
     transition: all 1s;
-
-
 }
-.bordaskills:hover{
-    border:1px, solid, #dc143c;
+
+.bordaskills:hover {
+    border: 1px solid #dc143c;
     border-radius: 10px;
     padding-top: 10px;
     flex-grow: 5;
     transition: all 0.5s;
     font-size: 20px;
-
 }
-/*Skills*/
+
+.Contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    font-size: 25px;
+}
+
+input {
+    border: 2px solid crimson;
+    outline: none;
+    background-color: transparent;
+    color: aliceblue;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+input:focus {
+    border-color: white;
+}
+
+input::placeholder {
+    color: aliceblue;
+}
+
+button {
+    border: none;
+    width: 100px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, crimson, #ff6584);
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 1s;
+}
+
+button:hover {
+    width: 150px;
+    transition: all 1s;
+    background: linear-gradient(135deg, rgb(255, 255, 255), crimson);
+    font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+    .foto {
+        width: 300px;
+        height: 300px;
+    }
+    .Lennon, .Vinicius {
+        font-size: 60px;
+    }
+    .about, .projects, .skillstitle {
+        font-size: 60px;
+    }
+    .tecnico, .faculdade {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .project, .projectimage {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .profile {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .foto {
+        width: 250px;
+        height: 250px;
+    }
+    .Lennon, .Vinicius {
+        font-size: 45px;
+    }
+    .Ola {
+        font-size: 22px;
+    }
+    .about {
+        font-size: 40px;
+        padding-top: 60px;
+    }
+    .textabout, .descriptionProject {
+        font-size: 16px;
+    }
+    .faculdade, .tecnico {
+        gap: 20px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 10px;
+        font-size: 14px;
+    }
+    .Lennon, .Vinicius {
+        font-size: 32px;
+    }
+    .Ola {
+        font-size: 18px;
+    }
+    .foto {
+        width: 180px;
+        height: 180px;
+    }
+    .about, .projects, .skillstitle {
+        font-size: 28px;
+    }
+    .textabout, .descriptionProject {
+        font-size: 14px;
+    }
+    .projectimage {
+        max-width: 100%;
+        height: auto;
+    }
+    .bordaskills {
+        height: auto;
+        font-size: 12px;
+    }
+    .Contact {
+        flex-direction: column;
+        gap: 20px;
+    }
+    button {
+        width: 100%;
+        max-width: 200px;
+        margin: auto;
+    }
+}
