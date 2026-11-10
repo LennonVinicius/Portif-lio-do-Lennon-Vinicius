@@ -180,16 +180,25 @@ header a {
     height: 150px;
 }
 
+.fatecimagebox {
+    border-radius: 50%;
+    border: 3px solid crimson;
+    background-color: #f8fafc;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
 .fatecimage {
-    width: 160px;
+    width: 110px;
     max-width: 100%;
     height: auto;
     object-fit: contain;
-    border-radius: 6px;
-    background-color: #f8fafc;
-    padding: 5px;
-    box-sizing: border-box;
-    flex-shrink: 0;
 }
 
 .tecnicotitle {
