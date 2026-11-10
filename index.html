@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio do Lennon Vinicius</title>
-    <link rel="stylesheet"  href="index.css?v=6">
+    <link rel="stylesheet"  href="index.css?v=7">
 
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -35,7 +35,6 @@
         </div>
     </header>
 
-    <!--Profile ------------------------------------>
     <section id="Home">
         <div class="profile">
           
@@ -64,9 +63,7 @@
     <div class="centralizacao">
         <a class="downloadCV" href="imagefiles/Job%20Application.pdf">Download CV</a>
     </div>
-    
 
-    <!--AboutMe ------------------------------------>
     <section id="AboutMe">
     <div class="aboutMe">
         <h1 class="about">About <a class="me    " href="#Home">Me</a></h1>
@@ -110,7 +107,7 @@
 
     </div>
     </section>
-    <!--Projects ------------------------------------>
+
     <h2 id="Projects" class="projects">
         Projects
     </h2>
@@ -118,22 +115,33 @@
         <li class="project">
             <img class="projectimage" src="imagefiles/aerodecision-portfolio.jpg" alt="AeroDecision AI">
             <p class="projectTitle">AeroDecision AI</p>
-            <p class="descriptionProject">AI-powered aircraft recommendation and mission analysis platform.</p>
+            <p class="descriptionProject">An AI-powered decision support system for aircraft selection and mission planning.</p>
+            <p class="projectdetails"><strong>Challenge:</strong> Comparing aircraft for a mission involves range, passenger and cargo needs, operational costs and route constraints.</p>
+            <p class="projectdetails"><strong>Solution:</strong> A platform that analyzes mission requirements, scores compatible aircraft and explains recommendations using AI, with dashboards for the results.</p>
+            <p class="projectdetails"><strong>Technologies:</strong> Python, FastAPI, Streamlit, PostgreSQL, Docker, LLMs and Power BI.</p>
+            <p class="projectdetails"><strong>Skills demonstrated:</strong> API development, data analysis, analytical thinking and problem solving.</p>
             <a class="projectlink" href="https://github.com/LennonVinicius/AeroDecision-AI" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
         </li>
         <li class="project">
             <div class="projectimage projectplaceholder">Lead Search</div>
             <p class="projectTitle">Lead Search</p>
-            <p class="descriptionProject">Full stack application to discover, organize and prioritize local business leads.</p>
+            <p class="descriptionProject">A full stack application for discovering and managing local business opportunities.</p>
+            <p class="projectdetails"><strong>Challenge:</strong> Finding relevant establishments and tracking commercial opportunities requires collecting, prioritizing and organizing information from different sources.</p>
+            <p class="projectdetails"><strong>Solution:</strong> A search and prioritization system with business profiles, CRM features, follow-up tracking, dashboards and visit route planning.</p>
+            <p class="projectdetails"><strong>Technologies:</strong> React, TypeScript, Python, FastAPI and PostgreSQL.</p>
+            <p class="projectdetails"><strong>Skills demonstrated:</strong> Full stack integration, data organization, planning and problem solving.</p>
             <a class="projectlink" href="https://github.com/LennonVinicius/beesys-lead-personal" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
         </li>
         <li class="project">
             <img class="projectimage" src="imagefiles/nevupi-portfolio.jpg" alt="NEVUPI">
             <p class="projectTitle">NEVUPI</p>
-            <p class="descriptionProject">Startup focused on making technology simpler for small businesses.</p>
+            <p class="descriptionProject">A startup focused on making technology more accessible and everyday tasks simpler for small businesses.</p>
+            <p class="projectdetails"><strong>Challenge:</strong> Small business owners often need simpler ways to organize their day-to-day operations.</p>
+            <p class="projectdetails"><strong>Purpose:</strong> Build a practical and approachable digital experience around the real needs of small businesses.</p>
+            <p class="projectdetails"><strong>Focus:</strong> Product development, user experience and solving real-world problems.</p>
         </li>
     </ul>
-    <!--Skills ------------------------------------>
+
     <div class="Skills" id="Skills">
         <h1 class="skillstitle">Skills</h1>
         <ul class="languagelist">
@@ -205,19 +213,37 @@
             </div>
         </ul>
     </div>
-    <!--Skills ------------------------------------>
-    <div class="ContactMe">
+
+    <div class="Courses">
+        <h2 class="skillstitle">Courses & Languages</h2>
+        <div class="courselist">
+            <div class="courseitem">
+                <h3 class="skillname">Additional Courses</h3>
+                <p>C# Programming — Udemy</p>
+                <p>SQL & Databases — Udemy</p>
+                <p>Power BI — Udemy</p>
+                <p>IT Essentials 7 — Cisco Networking Academy</p>
+            </div>
+            <div class="courseitem">
+                <h3 class="skillname">Languages</h3>
+                <p>Portuguese — Native</p>
+                <p>English — Intermediate (B1/B2)</p>
+                <p>Spanish — Basic (A2)</p>
+            </div>
+        </div>
+    </div>
+    <div class="ContactMe" id="Contact">
         <h2 class="skillstitle">Contact Me</h2>
     </div>
     <div class="Contact">
-        <form>
+        <form onsubmit="sendMail(event)">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email" required>
+                <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
                 <label for="subject">Subject</label>
@@ -225,16 +251,13 @@
             </div>
             <div class="form-group">
                 <label for="message">Message</label>
-                <input type="text" id="message" name="message" required>
+                <textarea id="message" name="message" rows="4" required></textarea>
             </div>
-            <button type="submit" onclick="sendMail()">Send</button>
+            <button type="submit">Send</button>
 
         </form>
       
     </div>
-    
-
-    <!--Footer ------------------------------------>
 
     <footer>
 
